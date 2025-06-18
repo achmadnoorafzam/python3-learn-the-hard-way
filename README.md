@@ -4,6 +4,8 @@ This repository contains my personal practice exercises while studying the book 
 ## Notes
 All code is rewritten and added more examples by myself as part of the learning process.
 
+I used mix language (English + Bahasa Melayu)
+
 Not official solutions from the book's author.
 
 Reference: Original Book (https://learnpythonthehardway.org/python3/).
