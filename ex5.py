@@ -30,5 +30,5 @@ for i in range(total + 1):
     filled = "=" * int(progress * bar_length)
     remaining = " " * (bar_length - len(filled))
     print(f"\rProgress: [{filled}{remaining}] {progress:.0%}", end="", flush=True)
-    time.sleep(0.1)  # Simulasi proses
-print()  # Pindah baris setelah selesai
+    time.sleep(0.1)  # Simulation process
+print()

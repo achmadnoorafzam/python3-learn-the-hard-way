@@ -3,18 +3,18 @@
 # Example 1
 MyName = "My name is {}"
 print(MyName.format("Achmad Noorafzam"))
-print(f"My name is {'Achmad Noorafzam'} <-- Guna f-string") # Guna f-string
+print(f"My name is {'Achmad Noorafzam'} <-- Use f-string")
 
 # Example 2
-umur = 2025 - 1989
-template1 = "{} berumur {} tahun"
-Nama = "Bobby"
-print(template1.format(Nama, umur))
-print(f"{Nama} berumur {umur} tahun <-- Guna f-string") # Guna f-string
+age = 2025 - 1989
+template1 = "{} age is {} years old."
+Name = "Bobby"
+print(template1.format(Name, age))
+print(f"{Name} age is {age} years old. <-- Use f-string")
 
 # Example 3
-template2 = "{1} adalah anak kepada {0}."
-print(template2.format("Ali", "Abu")) # f-string tidak mengenal posisi pernomboran
+template2 = "{1} is son of {0}."
+print(template2.format("Ali", "Abu")) # Cannot use f-string.
 
 # Real world application example
 # Sales Report
@@ -23,33 +23,33 @@ product = "Laptop"
 quantity = 5
 price = 4500
 
-report = "Anda telah membeli {} sebanyak {} dengan harga RM{}."
+report = "You bought {} in total quantity {} with price RM{}."
 print(report.format(product, quantity, price * quantity))
-print(f"Anda telah membeli {product} sebanyak {quantity} dengan harga RM{price * quantity} <-- Guna f-string")
+print(f"You bought {product} in total quantity {quantity} with price RM{price * quantity} <-- Use f-string")
 
 # Notification Example
 
-nama_pelanggan = "Achmad Noorafzam"
-tarikh_penghantaran = "17 Jun 2025"
-nombor_invoice = "INV1234"
+customer_name = "Achmad Noorafzam"
+delivery_date = "17 June 2025"
+invoice_number = "INV1234"
 
-mesej = """
-Hello {}! tempahan (#{}) telah dihantar pada {}.
-Terima kasih kerana telah menggunakan perkhidmatan kami.
+message = """
+Hello {}! Order.No (#{}) has been delivered on {}.
+Thank you for using our service.
 """
 
-print(mesej.format(nama_pelanggan, nombor_invoice, tarikh_penghantaran))
-# TODO: Sila buat versi f-string
+print(message.format(customer_name, invoice_number, delivery_date))
+# TODO: Try do f-string version below.
 
 # Command Line (CLI) Progress Bar
 
 progress = 0.5 # nilai 1 adalah 100%
 print("Progress: [{:<20}] {:.1%}".format("="*int(progress*20), progress))
-print(f"Progress: [{'=' * int(progress * 20):<20}] {progress:.1%} <-- Guna f-string") #Guna f-string
+print(f"Progress: [{'=' * int(progress * 20):<20}] {progress:.1%} <-- Use f-string")
 
 # Dynamic HTML generation
 tag = "div"
-content = "Selamat datang"
+content = "Welcome Home"
 attributes = {'class': 'header', 'id': 'welcome-msg'}
 
 html = "<{tag} {attrs}>{content}</{tag}>".format(
